@@ -489,6 +489,11 @@
   #define TUP_RHPORT_HIGHSPEED    1
   #define TUD_ENDPOINT_ONE_DIRECTION_ONLY
 
+//--------------------------------------------------------------------+
+// Microchip AVR
+//--------------------------------------------------------------------+
+#elif TU_CHECK_MCU(OPT_MCU_AVRDU)
+  #define TUP_DCD_ENDPOINT_MAX    16
 #endif
 
 //--------------------------------------------------------------------+

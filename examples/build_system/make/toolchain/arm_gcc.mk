@@ -15,6 +15,8 @@ SIZE = $(CROSS_COMPILE)size
 CFLAGS += \
   -fsingle-precision-constant \
 
-LIBS += -lgcc -lm -lnosys
+ifndef SKIP_LIBS
+  LIBS += -lgcc -lm -lnosys
+endif
 
 include ${TOP}/examples/build_system/make/toolchain/gcc_common.mk
